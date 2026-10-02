@@ -1,17 +1,15 @@
-# ⚡ Sojib Magic Tool
+# Sojib Magic Tool
+
 A custom automated wireless vulnerability assessment launcher tool designed for rooted Termux environments.
 
-## 🚀 Features
-- Beautiful custom "SOJIB VAI" ASCII banner (figlet)
-- Cyber matrix loading animations
-- Automatic root permission and environment path handler
-- Direct integration with oneshot WPS audit framework
+## 🚀 Installation & Usage
+To install and run the tool, copy and paste the following one-liner command into your Termux terminal:
 
-## 📥 Installation
-Run the following command in your rooted Termux:
+```bash
+pkg update -y && pkg install figlet git -y && git clone https://github.com/sywwuw55-lab/sojib-magic-tool.git && cd sojib-magic-tool && cp magic $PREFIX/bin/magic && chmod +x $PREFIX/bin/magic && echo -e "\n\033[1;32m[✔] INSTALLED SUCCESSFULLY! Type 'magic'\033[0m"
+```
 
-pkg update -y && pkg install figlet git -y && git clone https://github.com/YOUR_USERNAME/sojib-magic-tool.git && cd sojib-magic-tool && cp magic $PREFIX/bin/magic && chmod +x $PREFIX/bin/magic && echo -e "\n[✔] INSTALLED SUCCESSFULLY! Type 'magic'"
-
-## 🛠️ Usage
-Simply type:
+After installation, simply type:
+```bash
 magic
+```
