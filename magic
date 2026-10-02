@@ -1,0 +1,29 @@
+#!/data/data/com.termux/files/usr/bin/bash
+clear
+echo -e "\033[1;35m"
+echo "   ✨ ACCELERATING MAGIC CORE... ✨"
+echo -e "\033[0m"
+for i in {1..3}; do
+    echo " [⚡] LOADING CYBER MATRIX_$i..."
+    sleep 0.1
+done
+clear
+
+echo -e "\033[1;32m"
+echo "==================================================="
+echo " [!] INITIALIZING SECURE HACKING ENVIRONMENT..."
+echo " [!] TARGET: WIRELESS VULNERABILITY ASSESSMENT"
+echo "==================================================="
+figlet -f slant "SOJIB VAI"
+echo -e "\033[1;31m"
+echo "   [!] WARNING: FOR AUTHORIZED TESTING ONLY [!]"
+echo -e "\033[1;36m===================================================\033[0m"
+echo ""
+
+echo -e "\033[1;33m[*] Summoning Magic Power... SUCCESS"
+echo -e "\033[1;33m[*] Granting Root & Network Permissions... SUCCESS"
+echo -e "\033[1;32m[*] LAUNCHING ONESHOT MAGIC ENGINE...\033[0m"
+sleep 0.8
+echo ""
+
+su -c "export HOME=/data/data/com.termux/files/home; export PATH=\$PATH:/data/data/com.termux/files/usr/bin; oneshot -i wlan0 -K"
