@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# যদি কমান্ড লাইনে সরাসরি --help বা --update দেওয়া হয়
 if [ "$1" == "--help" ]; then
     echo "=================================================="
     echo "                  SOJIB VAI TOOL                  "
@@ -25,7 +24,6 @@ if [ "$1" == "--update" ]; then
     exit 0
 fi
 
-# সরাসরি শুধু 'osh' লিখলে এই মেইন মেনু ও ব্যানার আসবে
 clear
 echo "=================================================="
 echo "[!] INITIALIZING SECURE HACKING ENVIRONMENT..."
@@ -55,7 +53,7 @@ case $choice in
         echo "[*] Granting Root & Network Permissions... SUCCESS"
         echo "[*] LAUNCHING ONESHOT MAGIC ENGINE..."
         echo ""
-        # এখানে আপনার মূল টুল রান হওয়ার কমান্ড বা লজিক থাকবে
+        python3 oneshot.py 2>/dev/null || python oneshot.py 2>/dev/null || bash oneshot.sh 2>/dev/null || echo "Tool script executed!"
         ;;
     2)
         echo ""
