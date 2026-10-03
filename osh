@@ -53,7 +53,8 @@ case $choice in
         echo "[*] Granting Root & Network Permissions... SUCCESS"
         echo "[*] LAUNCHING ONESHOT MAGIC ENGINE..."
         echo ""
-        python3 oneshot.py 2>/dev/null || python oneshot.py 2>/dev/null || bash oneshot.sh 2>/dev/null || echo "Tool script executed!"
+        # এখানে আপনার আসল ওয়াইফাই টুল রান হওয়ার মূল কমান্ড দেওয়া হলো
+        python3 oneshot.py || python oneshot.py || ./oneshot.py
         ;;
     2)
         echo ""
