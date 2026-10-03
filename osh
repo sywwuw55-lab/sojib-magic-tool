@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# যদি ইউজার help দেখতে চায়
+# যদি কমান্ড লাইনে সরাসরি --help বা --update দেওয়া হয়
 if [ "$1" == "--help" ]; then
     echo "=================================================="
     echo "                  SOJIB VAI TOOL                  "
@@ -13,7 +13,6 @@ if [ "$1" == "--help" ]; then
     exit 0
 fi
 
-# যদি ইউজার update info দেখতে চায়
 if [ "$1" == "--update" ]; then
     echo "=================================================="
     echo "               TOOL UPDATE INFO                   "
@@ -26,7 +25,7 @@ if [ "$1" == "--update" ]; then
     exit 0
 fi
 
-# মূল টুল বা ব্যানার অংশ
+# সরাসরি শুধু 'osh' লিখলে এই মেইন মেনু ও ব্যানার আসবে
 clear
 echo "=================================================="
 echo "[!] INITIALIZING SECURE HACKING ENVIRONMENT..."
@@ -39,10 +38,47 @@ echo "=================================================="
 echo "[!] WARNING: FOR AUTHORIZED TESTING ONLY [!]"
 echo "=================================================="
 echo ""
-echo "[*] Summoning Magic Power... SUCCESS"
-echo "[*] Granting Root & Network Permissions... SUCCESS"
-echo "[*] LAUNCHING ONESHOT MAGIC ENGINE..."
-echo ""
-echo " Need Help? Contact TG: @wifihacksell_bot"
-echo " Type 'osh --help' for commands menu."
 echo "=================================================="
+echo "                   MAIN MENU                      "
+echo "=================================================="
+echo " 1. Start Tool (Launch Oneshot Magic Engine)"
+echo " 2. Help & Contact (@wifihacksell_bot)"
+echo " 3. Check Update Info"
+echo " 4. Exit"
+echo "=================================================="
+read -p "Select an option [1-4]: " choice
+
+case $choice in
+    1)
+        echo ""
+        echo "[*] Summoning Magic Power... SUCCESS"
+        echo "[*] Granting Root & Network Permissions... SUCCESS"
+        echo "[*] LAUNCHING ONESHOT MAGIC ENGINE..."
+        echo ""
+        # এখানে আপনার মূল টুল রান হওয়ার কমান্ড বা লজিক থাকবে
+        ;;
+    2)
+        echo ""
+        echo "=================================================="
+        echo " [!] Need Help? Contact TG: @wifihacksell_bot"
+        echo " [!] You can also type: osh --help"
+        echo "=================================================="
+        ;;
+    3)
+        echo ""
+        echo "=================================================="
+        echo "               TOOL UPDATE INFO                   "
+        echo "=================================================="
+        echo " [*] Current Version : v1.0"
+        echo " [*] Latest Version  : v1.1 (Available!)"
+        echo " [*] To Update Run   : git pull origin main"
+        echo "=================================================="
+        ;;
+    4)
+        echo "Exiting... Goodbye!"
+        exit 0
+        ;;
+    *)
+        echo "Invalid option! Please try again."
+        ;;
+esac
