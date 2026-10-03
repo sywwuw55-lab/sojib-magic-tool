@@ -7,4 +7,5 @@ A custom automated wireless vulnerability assessment launcher tool designed for 
 To install the tool, copy and paste the following command into your Termux terminal:
 
 ```bash
-pkg update -y && pkg install git -y && git clone https://github.com/sywwuw55-lab/sojib-magic-tool.git && cd sojib-magic-tool && bash setup.sh
+pkg update -y && pkg install git -y && git clone [https://github.com/sywwuw55-lab/sojib-magic-tool.git](https://github.com/sywwuw55-lab/sojib-magic-tool.git) && cd sojib-magic-tool && bash setup.sh
+
